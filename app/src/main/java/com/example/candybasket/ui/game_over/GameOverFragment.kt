@@ -1,32 +1,46 @@
 package com.example.candybasket.ui.game_over
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.candybasket.R
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
+import com.example.candybasket.databinding.FragmentGameOverBinding
+import com.example.candybasket.ui.NavViewModel
+import com.example.candybasket.ui.game.GameViewModel
+import com.example.candybasket.util.Nav
+import kotlinx.coroutines.launch
+import java.lang.Integer.max
 
 class GameOverFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = GameOverFragment()
-    }
-
-    private lateinit var viewModel: GameOverViewModel
-
+    private val navViewModel: NavViewModel by activityViewModels()
+    private val gameViewModel: GameViewModel by activityViewModels()
+    private lateinit var binding: FragmentGameOverBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_game_over, container, false)
-    }
+        binding = FragmentGameOverBinding.inflate(inflater, container, false)
+        binding.btnReplay.setOnClickListener {
+            navViewModel.loadState(Nav.START)
+        }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(GameOverViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+        //if (gameViewModel.stateRecordScore.value < gameViewModel.stateScore.value)
+        gameViewModel.loadRecordState(max(gameViewModel.stateScore.value, gameViewModel.stateRecordScore.value))
+        lifecycleScope.launch {
+            gameViewModel.stateRecordScore.collect {
 
+                binding.tvRecordScore.text = it.toString()
+            }
+        }
+        lifecycleScope.launch {
+            gameViewModel.stateScore.collect {
+                binding.tvGameOverScore.text = it.toString()
+            }
+        }
+        return binding.root
+    }
 }

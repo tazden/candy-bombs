@@ -9,13 +9,320 @@
 
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivItem10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem00" />
+
+    <ImageView
+        android:id="@+id/ivItem11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem00"
+        app:layout_constraintTop_toTopOf="@+id/ivItem10" />
+
+    <ImageView
+        android:id="@+id/ivItem12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem01"
+        app:layout_constraintTop_toTopOf="@+id/ivItem11" />
+
+    <ImageView
+        android:id="@+id/ivItem13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/ivItem12" />
+
+    <TextView
+        android:id="@+id/tvGameScore"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:gravity="bottom|center"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:textSize="58sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:gravity="center"
+        android:text="@string/candy_nbasket"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="336dp"
+        android:layout_height="592dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="fitXY"
         android:src="@drawable/second_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/ivItem20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem10" />
+
+    <ImageView
+        android:id="@+id/ivItem21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/ivItem00"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem11" />
+
+    <ImageView
+        android:id="@+id/ivItem22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/ivItem01"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem12" />
+
+    <ImageView
+        android:id="@+id/ivItem23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem13" />
+
+    <ImageView
+        android:id="@+id/ivItem33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem23" />
+
+    <ImageView
+        android:id="@+id/ivItem32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem01"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem22" />
+
+    <ImageView
+        android:id="@+id/ivItem31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem00"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem21" />
+
+    <ImageView
+        android:id="@+id/ivItem30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem20" />
+
+    <ImageView
+        android:id="@+id/ivItem00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/ivItem01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/ivItem00"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/ivItem02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/ivItem01"
+        app:layout_constraintTop_toTopOf="@+id/ivItem01" />
+
+    <ImageView
+        android:id="@+id/ivItem03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/ivItem02" />
+
+    <ImageView
+        android:id="@+id/ivItem51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/ivItem00"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem41" />
+
+    <ImageView
+        android:id="@+id/ivItem52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/ivItem01"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem42" />
+
+    <ImageView
+        android:id="@+id/ivItem40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem30" />
+
+    <ImageView
+        android:id="@+id/ivItem42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem01"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem32" />
+
+    <ImageView
+        android:id="@+id/ivItem41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem00"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem31" />
+
+    <ImageView
+        android:id="@+id/ivItem43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem33" />
+
+    <ImageView
+        android:id="@+id/ivItem50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem40" />
+
+    <ImageView
+        android:id="@+id/ivItem53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_blue_egg"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem43" />
+
+    <ImageView
+        android:id="@+id/ivItem63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem53" />
+
+    <ImageView
+        android:id="@+id/ivItem62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem01"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem52" />
+
+    <ImageView
+        android:id="@+id/ivItem61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-3dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/ivItem00"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem51" />
+
+    <ImageView
+        android:id="@+id/ivItem60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icon_blue_egg"
+        android:translationZ="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivItem50" />
 </androidx.constraintlayout.widget.ConstraintLayout>

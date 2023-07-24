@@ -1,7 +1,9 @@
 package com.example.candybasket.ui.game_over
 
 import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class GameOverViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+@HiltViewModel
+class GameOverViewModel @Inject constructor(): ViewModel() {
 }
