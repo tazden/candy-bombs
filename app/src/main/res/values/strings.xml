@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">CandyBasket</string>
-    <string name="candy_nbasket">CANDY\nBASKET</string>
+    <string name="app_name">Candy Bombs</string>
+    <string name="candy_bombs">CANDY BOMBS</string>
     <string name="_0">0</string>
-    <string name="game_over">GAME OVER!</string>
-    <string name="record">RECORD</string>
-    <string name="replay">REPLAY</string>
+    <string name="finished">FINISHED</string>
+    <string name="best_score">BEST SCORE</string>
+    <string name="restart">RESTART</string>
     <string name="start">START</string>
+    <string name="loading">Loading</string>
+
 </resources>

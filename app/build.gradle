@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.candybasket'
+    namespace 'net.sweetdestr.ck'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.candybasket"
+        applicationId "net.sweetdestr.ck"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -41,6 +41,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.airbnb.android:lottie:5.2.0'
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'

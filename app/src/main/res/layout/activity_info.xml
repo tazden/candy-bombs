@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".ui.InfoActivity">
+
+    <ImageView
+        android:id="@+id/blck"
+        android:layout_width="261dp"
+        android:layout_height="139dp"
+        android:paddingTop="12dp"
+        android:src="@drawable/uiu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/blck"
+        app:layout_constraintStart_toStartOf="@id/blck"
+        app:layout_constraintEnd_toEndOf="@id/blck"
+        app:layout_constraintBottom_toBottomOf="@id/blck"
+        android:paddingTop="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="INFO"
+        android:textSize="42dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/textbox"
+        android:padding="40dp"
+        android:text="Candy Bombs is an engaging puzzle game that challenges players to match identical candies while avoiding the bombs. The objective is to carefully tap on pairs of matching candies without triggering any bombs. As players progress, they must strategically identify and match all pairs of candies, leaving only the single candies and the bombs. Successfully matching all pairs of candies without tapping on a bomb marks a victory, signaling the completion of the level. This game tests players' memory, attention, and ability to make strategic decisions, offering a delightful and rewarding experience for those who successfully navigate through the sweet and explosive challenges."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="244dp"
+        android:layout_height="60dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="244dp"
+        android:layout_height="60dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/back"
+        app:layout_constraintEnd_toEndOf="@id/back"
+        app:layout_constraintTop_toTopOf="@id/back"
+        app:layout_constraintBottom_toBottomOf="@id/back"
+        android:text="GO"
+        style="@style/Text"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/exit"
+        app:layout_constraintEnd_toEndOf="@id/exit"
+        app:layout_constraintTop_toTopOf="@id/exit"
+        app:layout_constraintBottom_toBottomOf="@id/exit"
+        android:text="EXIT"
+        style="@style/Text"
+        android:textStyle="bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

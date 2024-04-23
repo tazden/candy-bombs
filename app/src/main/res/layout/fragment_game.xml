@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
-    tools:context=".ui.game.GameFragment">
+    android:background="@drawable/backgr"
+    tools:context="net.sweetdestr.ck.ui.game.GameFragment">
 
 
     <ImageView
@@ -18,6 +18,8 @@
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/ivItem00" />
+
+
 
     <ImageView
         android:id="@+id/ivItem11"
@@ -57,7 +59,7 @@
         android:gravity="bottom|center"
         android:text="@string/_0"
         android:textColor="@color/white"
-        android:textSize="58sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,11 +69,12 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_bold_italic"
+        style="@style/Text"
+        android:textStyle="bold"
         android:gravity="center"
-        android:text="@string/candy_nbasket"
+        android:text="@string/candy_bombs"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -88,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.82" />
 
     <ImageView
         android:id="@+id/ivItem20"

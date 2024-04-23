@@ -4,19 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
-    tools:context=".ui.start.StartFragment">
+    android:background="@drawable/backgr"
+    tools:context="net.sweetdestr.ck.ui.start.StartFragment">
 
 
     <ImageView
         android:id="@+id/btnStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="170dp"
-        android:src="@drawable/button_background"
+        android:layout_width="244dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btnStart"
+        android:text="START"
+        style="@style/Text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnStart"
+        app:layout_constraintStart_toStartOf="@id/btnStart"
+        app:layout_constraintEnd_toEndOf="@id/btnStart"/>
 
     <TextView
         android:id="@+id/textView"
@@ -25,7 +36,7 @@
         android:layout_marginTop="113dp"
         android:fontFamily="@font/roboto_bold_italic"
         android:gravity="center"
-        android:text="@string/candy_nbasket"
+        android:text="@string/candy_bombs"
         android:textColor="@color/white"
         android:textSize="58sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,20 +59,7 @@
         app:layout_constraintStart_toEndOf="@+id/tvStartScore"
         app:layout_constraintTop_toTopOf="@+id/tvStartScore" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_bold_italic"
-        android:gravity="center"
-        android:text="@string/start"
-        android:textColor="@color/white"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnStart"
-        app:layout_constraintEnd_toEndOf="@+id/btnStart"
-        app:layout_constraintStart_toStartOf="@+id/btnStart"
-        app:layout_constraintTop_toTopOf="@+id/btnStart"
-        app:layout_constraintVertical_bias="0.18" />
+
 
     <TextView
         android:id="@+id/tvStartScore"
@@ -69,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/roboto_italic"
-        android:text="@string/record"
+        android:text="@string/best_score"
         android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/tvStartRecord"

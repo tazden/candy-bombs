@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_background"
-    tools:context=".ui.game_over.GameOverFragment">
+    android:background="@drawable/backgr"
+    tools:context="net.sweetdestr.ck.ui.game_over.GameOverFragment">
 
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_bold_italic"
         android:gravity="center"
-        android:text="@string/candy_nbasket"
+        android:text="@string/candy_bombs"
         android:textColor="@color/white"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,9 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
+        android:paddingTop="10dp"
         android:fontFamily="@font/roboto_bold_italic"
         android:gravity="center"
-        android:text="@string/game_over"
+        android:text="@string/finished"
         android:textColor="@color/white"
         android:textSize="39sp"
         android:translationZ="1dp"
@@ -56,36 +57,37 @@
     <TextView
         android:id="@+id/tvGameOverScore"
         android:layout_width="wrap_content"
-        android:layout_height="67dp"
+        android:layout_height="57dp"
         android:fontFamily="@font/roboto_bold_italic"
         android:gravity="bottom|center"
         android:text="@string/_0"
         android:textColor="@color/white"
-        android:textSize="58sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/second_background"
+        android:layout_width="337dp"
+        android:layout_height="631dp"
+        android:padding="5dp"
+        android:src="@drawable/board"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tvStartScore2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/roboto_italic"
-        android:text="@string/record"
+        android:text="@string/best_score"
         android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintEnd_toStartOf="@+id/tvRecordScore"
@@ -95,77 +97,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:src="@drawable/icon_item_background"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:src="@drawable/icon_item_background"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:src="@drawable/icon_item_background"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.29"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.19999999" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icon_item_background"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:src="@drawable/icon_item_background"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toEndOf="@+id/imageView6" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icon_item_background"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/icon_item_background"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8" />
-
-    <ImageView
         android:id="@+id/btnReplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -173,7 +104,10 @@
         android:src="@drawable/icon_button_replay_background"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.651" />
 
     <TextView
         android:id="@+id/textView7"
@@ -181,7 +115,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_bold_italic"
         android:gravity="center"
-        android:text="@string/replay"
+        android:text="@string/restart"
         android:textColor="@color/grey"
         android:textSize="48sp"
         android:translationZ="1dp"
